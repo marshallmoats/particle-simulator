@@ -142,20 +142,3 @@ impl ParticleSystem {
         }
     }
 }
-
-struct Player {
-    pos: Vec2,
-    //tex: Texture2D,
-}
-
-impl Player {
-    fn new() -> Self {
-        Self {
-            pos: vec2(0.0, 0.0),
-            //tex: load_texture("assets/player.png").unwrap(),
-        }
-    }
-    fn draw(&self) {
-        // draw_texture(self.tex, self.pos.x, self.pos.y, WHITE);
-    }
-}
