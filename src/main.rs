@@ -1,4 +1,3 @@
-#[allow(unused, dead_code)]
 use macroquad::prelude::*;
 
 fn window_conf() -> Conf {
@@ -93,17 +92,4 @@ async fn main() {
         t += 1;
         next_frame().await
     }
-}
-
-
-
-fn _quad(a: f64, b: f64, c: f64) -> Option<(f64, f64)> {
-    let disc = b * b - 4.0 * a * c;
-    if disc < 0.0 {
-        return None;
-    }
-    let sqrt_disc = disc.sqrt();
-    let root1 = (-b - sqrt_disc) / 2.0;
-    let root2 = (-b + sqrt_disc) / 2.0;
-    Some((root1, root2))
 }
